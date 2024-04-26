@@ -1,0 +1,37 @@
+===============================
+Test File For 0-add_integer.txt
+===============================
+
+This Module inlcudes adding two numbers functionality by using `` add_integer(int, int) `` function
+Float inputs also treated as int (floats are casted in the declaration stage)
+
+=====
+Tests
+=====
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Two Ints
+>>> add_integer(1, 2)
+3
+
++++++++++++++++++++++
+
+Int and Negative Int
+>>> add_integer(100, -2)
+98
+
++++++++++++++++++++++
+
+Single input
+>>> add_integer(2)
+100
+
++++++++++++++++++++++
+
+Float and Int
+>>> add_integer(100.3, -2)
+98
+
+================
+End of Test File
+================
