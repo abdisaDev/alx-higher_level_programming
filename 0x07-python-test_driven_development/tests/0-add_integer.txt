@@ -9,6 +9,9 @@ Float inputs also treated as int (floats are casted in the declaration stage)
 Begin Tests 
 ===========
 
+For Numbers 
+-----------
+
 >>> add_integer = __import__('0-add_integer').add_integer
 
 Two Ints
@@ -32,6 +35,31 @@ Single input
 Float and Int
 >>> add_integer(100.3, -2)
 98
+
+For Non-Numbers
+---------------
+
+>>> add_integer("abdisa", 7)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(7, "abdisa")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> import math
+>>> add_integer(math.inf)
+Traceback (most recent call last):
+    ...
+OverflowError: cannot convert float infinity to integer
+
+>>> import math
+>>> add_integer(math.nan)
+Traceback (most recent call last):
+    ...
+ValueError: cannot convert float NaN to integer
 
 ================
 End of Test File
