@@ -5,9 +5,10 @@ Test File For 0-add_integer.txt
 This Module inlcudes adding two numbers functionality by using `` add_integer(int, int) `` function
 Float inputs also treated as int (floats are casted in the declaration stage)
 
-=====
-Tests
-=====
+===========
+Begin Tests 
+===========
+
 >>> add_integer = __import__('0-add_integer').add_integer
 
 Two Ints
