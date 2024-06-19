@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const callMeMoby = function (times, callBack) {
-  for (let i = 0; i < times; i++) {
-    callBack();
+const callMeMoby = function (x, theFunction) {
+  for (let i = 0; i < x; i++) {
+    theFunction();
   }
 };
 
