@@ -7,6 +7,6 @@ if (lists.length <= 1) {
   console.log(0);
 } else {
   const max_digit = Math.max(...lists);
-  lists[lists.indexOf(max_digit)] = Number.NEGATIVE_INFINITY;
+  lists[lists.indexOf(String(max_digit))] = Number.NEGATIVE_INFINITY;
   console.log(Math.max(...lists));
 }
