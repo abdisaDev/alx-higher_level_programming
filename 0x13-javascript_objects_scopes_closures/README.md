@@ -1,0 +1,1 @@
+Alx js object and scope proj
