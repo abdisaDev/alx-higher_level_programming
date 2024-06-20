@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-exports.nbOccurences = function (list, searchElement) {
+exports.esrever = function (list) {
   const revList = [];
   for (const element of list) {
     revList.unshift(element);
