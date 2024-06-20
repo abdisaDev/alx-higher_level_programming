@@ -5,4 +5,5 @@ const newData = list.map((value, index) => {
   return value * index;
 });
 
+console.log(list);
 console.log(newData);
